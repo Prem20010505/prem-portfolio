@@ -169,6 +169,8 @@
   .pbody li::marker { color: var(--gold); }
   .pbody .stack { margin-top: auto; padding-top: 6px; }
   .pcard.wide { grid-column: 1 / -1; }
+  .pcard .pimg.mark { height: 150px; }
+  .pcard .pbody { padding: 22px 28px 26px; }
   .pcard.wide .pimg { height: auto; background: #000; }
   .pcard.wide .pimg img { height: auto; max-height: 720px; object-fit: contain; }
 
@@ -185,6 +187,7 @@
   /* Contact */
   .contact { text-align: center; }
   .contact p { color: var(--muted); max-width: 34em; margin: 28px auto 0; font-size: 1.1rem; }
+  .cta { margin-top: 28px; }
   .row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; margin-top: 28px; }
   .row code { font: 500 16px var(--mono); background: var(--surface); border: 1px solid var(--line); padding: 11px 16px; border-radius: 8px; overflow-wrap: anywhere; user-select: all; }
   .btn { font: 600 15px var(--font); padding: 11px 20px; border-radius: 8px; border: 1px solid var(--gold); cursor: pointer; text-decoration: none; display: inline-block; }
@@ -244,6 +247,7 @@
       <h1>Prem Mettupalli</h1>
       <p class="role">ServiceNow Developer</p>
       <p class="tag">Building CSM, ITSM and ITOM solutions, integrations and automation on the ServiceNow platform</p>
+      <div class="cta"><a class="btn solid" href="Prem_Mettupalli_Resume.pdf" target="_blank" rel="noopener">View resume (PDF)</a></div>
     </div>
   </div>
 </header>
@@ -430,52 +434,20 @@
           </div>
         </article>
         <article class="pcard">
-          <div class="pimg mark"><span>Zendesk → CSM</span><small>CSM · Migration</small></div>
-          <div class="pbody">
-            <h3>Zendesk to ServiceNow CSM</h3>
-            <p>Designed a shared Case architecture with customer-level data segregation using scripted Query Business Rules, then moved roughly four years of ticket history with Transform Maps and scripts, fully validated in Dev before the production cutover.</p>
-            <div class="stack"><span class="chip">Transform Maps</span><span class="chip">Business Rules</span><span class="chip">CSM</span></div>
-          </div>
+          <div class="pimg mark"><span>Zendesk → CSM</span></div>
+          <div class="pbody"><h3>Zendesk to ServiceNow CSM Migration</h3></div>
         </article>
         <article class="pcard">
-          <div class="pimg mark"><span>PagerDuty → CSM</span><small>ITOM · Integration</small></div>
-          <div class="pbody">
-            <h3>PagerDuty Alerts into CSM Cases</h3>
-            <p>Custom Scripted REST APIs and n8n process on-call alert payloads, identify the CI, Account and Contact, and create structured Cases automatically.</p>
-            <div class="stack"><span class="chip">Scripted REST</span><span class="chip">n8n</span><span class="chip">PagerDuty</span></div>
-          </div>
+          <div class="pimg mark"><span>Aria Ops → CMDB</span></div>
+          <div class="pbody"><h3>VMware Aria Operations to ServiceNow CMDB Integration using the VMware Management Pack for ServiceNow</h3></div>
         </article>
         <article class="pcard">
-          <div class="pimg mark"><span>NetBox + vROps</span><small>CMDB · Automation</small></div>
-          <div class="pbody">
-            <h3>NetBox and vROps into the CMDB</h3>
-            <p>Migrated NetBox DCIM inventory into the CMDB with a Python ETL, and connected VMware vROps virtual machine data for customer-level VM monitoring and reporting.</p>
-            <div class="stack"><span class="chip">Python ETL</span><span class="chip">NetBox</span><span class="chip">vROps</span></div>
-          </div>
+          <div class="pimg mark"><span>Catalog + Flow</span></div>
+          <div class="pbody"><h3>Service Catalog and Flow Designer</h3></div>
         </article>
         <article class="pcard">
-          <div class="pimg mark"><span>Excel → Entitlements</span><small>CSM · Automation</small></div>
-          <div class="pbody">
-            <h3>Contract and Entitlement Imports</h3>
-            <p>A Python script loads Excel contract data into a staging table. A Business Rule then calls a Script Include that parses the rows into the Customer Entitlement and ast_contract tables.</p>
-            <div class="stack"><span class="chip">Python</span><span class="chip">Script Includes</span><span class="chip">Entitlements</span></div>
-          </div>
-        </article>
-        <article class="pcard">
-          <div class="pimg mark"><span>Catalog workflows</span><small>Service Catalog · Flow Designer</small></div>
-          <div class="pbody">
-            <h3>Catalog Workflows that Replaced Spreadsheets</h3>
-            <p>Built VM decommission and recommission requests and a contract-ordering process, with structured forms, multi-tier approvals and automated infrastructure entitlements.</p>
-            <div class="stack"><span class="chip">Flow Designer</span><span class="chip">Record Producers</span><span class="chip">Approvals</span></div>
-          </div>
-        </article>
-        <article class="pcard">
-          <div class="pimg mark"><span>Zurich → Australia</span><small>Platform · Upgrades</small></div>
-          <div class="pbody">
-            <h3>Zurich to Australia Upgrade</h3>
-            <p>Led the upgrade by reviewing skipped changes, merging out-of-box updates where appropriate and deliberately preserving the customizations the business depends on.</p>
-            <div class="stack"><span class="chip">Upgrade Monitor</span><span class="chip">Skipped Changes</span><span class="chip">Update Sets</span></div>
-          </div>
+          <div class="pimg mark"><span>Entitlements</span></div>
+          <div class="pbody"><h3>Entitlements and Contract Tracking</h3></div>
         </article>
       </div>
     </div>
@@ -519,6 +491,7 @@
       <div class="row">
         <code id="email">prem200105@gmail.com</code>
         <button class="btn ghost" id="copy" type="button">Copy email</button>
+        <a class="btn ghost" href="Prem_Mettupalli_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
         <a class="btn solid" href="https://www.linkedin.com/in/prem-chandra-sekhar-reddy-mettupalli-2318701b4/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
